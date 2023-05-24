@@ -1,0 +1,4 @@
+etl:
+  city_name: sonoma
+  city_name_report: Sonoma
+  regionboundryfile_cityname: sonoma

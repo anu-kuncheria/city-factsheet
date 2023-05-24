@@ -1,0 +1,4 @@
+etl:
+  city_name: el_cerrito
+  city_name_report: El Cerrito
+  regionboundryfile_cityname: el_cerrito

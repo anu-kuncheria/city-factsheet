@@ -1,0 +1,4 @@
+etl:
+  city_name: pinole
+  city_name_report: Pinole
+  regionboundryfile_cityname: pinole

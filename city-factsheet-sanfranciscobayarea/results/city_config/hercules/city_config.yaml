@@ -1,0 +1,4 @@
+etl:
+  city_name: hercules
+  city_name_report: Hercules
+  regionboundryfile_cityname: hercules

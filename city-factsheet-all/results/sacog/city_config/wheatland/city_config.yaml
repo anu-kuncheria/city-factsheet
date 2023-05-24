@@ -1,0 +1,5 @@
+
+etl:
+  city_name : "wheatland"
+  city_name_report : "Wheatland"
+  regionboundryfile_cityname : "wheatland" #city name in the boundary file

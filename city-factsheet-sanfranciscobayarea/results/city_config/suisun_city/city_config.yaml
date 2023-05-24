@@ -1,0 +1,4 @@
+etl:
+  city_name: suisun_city
+  city_name_report: Suisun City
+  regionboundryfile_cityname: suisun_city

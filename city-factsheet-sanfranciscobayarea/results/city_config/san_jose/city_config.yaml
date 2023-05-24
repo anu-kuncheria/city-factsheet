@@ -1,0 +1,4 @@
+etl:
+  city_name: san_jose
+  city_name_report: San Jose
+  regionboundryfile_cityname: san_jose

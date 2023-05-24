@@ -1,0 +1,4 @@
+etl:
+  city_name: san_ramon
+  city_name_report: San Ramon
+  regionboundryfile_cityname: san_ramon

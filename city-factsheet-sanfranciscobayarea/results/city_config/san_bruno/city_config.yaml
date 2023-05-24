@@ -1,0 +1,4 @@
+etl:
+  city_name: san_bruno
+  city_name_report: San Bruno
+  regionboundryfile_cityname: san_bruno

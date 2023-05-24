@@ -1,0 +1,5 @@
+
+etl:
+  city_name : "irvine"
+  city_name_report : "Irvine"
+  regionboundryfile_cityname : "Irvine" #city name in the boundary file

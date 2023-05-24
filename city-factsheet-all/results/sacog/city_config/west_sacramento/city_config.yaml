@@ -1,0 +1,5 @@
+
+etl:
+  city_name : "west_sacramento"
+  city_name_report : "West Sacramento"
+  regionboundryfile_cityname : "west_sacramento" #city name in the boundary file

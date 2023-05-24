@@ -1,0 +1,4 @@
+etl:
+  city_name: woodside
+  city_name_report: Woodside
+  regionboundryfile_cityname: woodside

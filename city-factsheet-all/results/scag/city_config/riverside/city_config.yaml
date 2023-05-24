@@ -1,0 +1,5 @@
+
+etl:
+  city_name : "riverside"
+  city_name_report : "Riverside"
+  regionboundryfile_cityname : "Riverside" 

@@ -1,0 +1,4 @@
+etl:
+  city_name: santa_clara
+  city_name_report: Santa Clara
+  regionboundryfile_cityname: santa_clara

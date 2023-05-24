@@ -1,0 +1,4 @@
+etl:
+  city_name: vallejo
+  city_name_report: Vallejo
+  regionboundryfile_cityname: vallejo

@@ -1,0 +1,5 @@
+
+etl:
+  city_name : "oceanside"
+  city_name_report : "Oceanside"
+  regionboundryfile_cityname : "Oceanside" #city name in the boundary file

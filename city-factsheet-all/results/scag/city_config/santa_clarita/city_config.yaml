@@ -1,0 +1,5 @@
+
+etl:
+  city_name : "santa_clarita"
+  city_name_report : "Santa Clarita"
+  regionboundryfile_cityname : "Santa Clarita" #city name in the boundary file

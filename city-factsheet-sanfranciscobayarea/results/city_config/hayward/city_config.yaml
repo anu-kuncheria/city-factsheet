@@ -1,0 +1,4 @@
+etl:
+  city_name: hayward
+  city_name_report: Hayward
+  regionboundryfile_cityname: hayward

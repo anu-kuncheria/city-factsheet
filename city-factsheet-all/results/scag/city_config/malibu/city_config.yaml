@@ -1,0 +1,5 @@
+
+etl:
+  city_name : "malibu"
+  city_name_report : "Malibu"
+  regionboundryfile_cityname : "Malibu" #city name in the boundary file

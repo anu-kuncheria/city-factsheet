@@ -1,0 +1,4 @@
+etl:
+  city_name: rio_vista
+  city_name_report: Rio Vista
+  regionboundryfile_cityname: rio_vista

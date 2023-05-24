@@ -1,0 +1,4 @@
+etl:
+  city_name: pacifica
+  city_name_report: Pacifica
+  regionboundryfile_cityname: pacifica

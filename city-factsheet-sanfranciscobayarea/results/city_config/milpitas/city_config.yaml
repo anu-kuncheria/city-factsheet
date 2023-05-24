@@ -1,0 +1,4 @@
+etl:
+  city_name: milpitas
+  city_name_report: Milpitas
+  regionboundryfile_cityname: milpitas

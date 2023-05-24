@@ -1,0 +1,4 @@
+etl:
+  city_name: american_canyon
+  city_name_report: American Canyon
+  regionboundryfile_cityname: american_canyon

@@ -1,0 +1,5 @@
+
+etl:
+  city_name : "anaheim"
+  city_name_report : "Anaheim"
+  regionboundryfile_cityname : "Anaheim" #city name in the boundary file

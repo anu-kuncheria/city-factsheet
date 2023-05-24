@@ -1,0 +1,4 @@
+etl:
+  city_name: newark
+  city_name_report: Newark
+  regionboundryfile_cityname: newark

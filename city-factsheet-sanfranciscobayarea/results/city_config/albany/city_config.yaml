@@ -1,0 +1,4 @@
+etl:
+  city_name: albany
+  city_name_report: Albany
+  regionboundryfile_cityname: albany

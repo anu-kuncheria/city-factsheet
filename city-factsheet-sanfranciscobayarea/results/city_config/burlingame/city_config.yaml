@@ -1,0 +1,4 @@
+etl:
+  city_name: burlingame
+  city_name_report: Burlingame
+  regionboundryfile_cityname: burlingame

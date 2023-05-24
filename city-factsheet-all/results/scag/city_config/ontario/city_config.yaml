@@ -1,0 +1,5 @@
+
+etl:
+  city_name : "ontario"
+  city_name_report : "Ontario"
+  regionboundryfile_cityname : "Ontario" #city name in the boundary file

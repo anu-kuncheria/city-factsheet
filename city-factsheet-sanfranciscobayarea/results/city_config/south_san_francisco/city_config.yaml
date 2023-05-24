@@ -1,0 +1,4 @@
+etl:
+  city_name: south_san_francisco
+  city_name_report: South San Francisco
+  regionboundryfile_cityname: south_san_francisco

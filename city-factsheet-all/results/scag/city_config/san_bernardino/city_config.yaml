@@ -1,0 +1,5 @@
+
+etl:
+  city_name : "san_bernardino"
+  city_name_report : "San Bernardino"
+  regionboundryfile_cityname : "San Bernardino" 

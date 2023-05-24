@@ -1,0 +1,5 @@
+
+etl:
+  city_name : "orange"
+  city_name_report : "Orange"
+  regionboundryfile_cityname : "Orange"  # name of the city in the region boundar file 

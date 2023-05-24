@@ -1,0 +1,4 @@
+etl:
+  city_name: los_gatos
+  city_name_report: Los Gatos
+  regionboundryfile_cityname: los_gatos

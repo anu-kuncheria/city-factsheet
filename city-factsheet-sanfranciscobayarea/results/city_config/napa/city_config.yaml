@@ -1,0 +1,4 @@
+etl:
+  city_name: napa
+  city_name_report: Napa
+  regionboundryfile_cityname: napa

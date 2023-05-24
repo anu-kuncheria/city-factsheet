@@ -1,0 +1,4 @@
+etl:
+  city_name: redwood_city
+  city_name_report: Redwood City
+  regionboundryfile_cityname: redwood_city

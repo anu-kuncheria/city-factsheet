@@ -1,0 +1,4 @@
+etl:
+  city_name: cupertino
+  city_name_report: Cupertino
+  regionboundryfile_cityname: cupertino

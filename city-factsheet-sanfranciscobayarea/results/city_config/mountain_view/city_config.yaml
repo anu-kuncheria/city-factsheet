@@ -1,0 +1,4 @@
+etl:
+  city_name: mountain_view
+  city_name_report: Mountain View
+  regionboundryfile_cityname: mountain_view

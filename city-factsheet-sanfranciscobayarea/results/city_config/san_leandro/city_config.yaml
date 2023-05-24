@@ -1,0 +1,4 @@
+etl:
+  city_name: san_leandro
+  city_name_report: San Leandro
+  regionboundryfile_cityname: san_leandro

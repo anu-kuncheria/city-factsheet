@@ -1,0 +1,4 @@
+etl:
+  city_name: daly_city
+  city_name_report: Daly City
+  regionboundryfile_cityname: daly_city

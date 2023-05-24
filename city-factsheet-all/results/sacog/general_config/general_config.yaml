@@ -1,0 +1,34 @@
+etl:
+  region: 'sacog'
+  taz_boundary_path : ""
+  cities_boundary_path : "../../data/sacog/sacogcities_boundary/Cities_and_Counties_processed.geojson"
+
+  network_path : "/Users/akuncheria/Documents/GSR-2021Feb/UCBerkeley_GSR/Networks_Dataset/data/sacog/final"
+  city_links: "sacog_links.csv"
+  city_nodes: "sacog_nodes.csv"
+  gdf_links_path: "../../data/sacog/sacognetwork_gdf/gdf_links.geojson"
+
+  raw_legs_path: "/Users/akuncheria/Documents/GSR-2021Feb/UCBerkeley_GSR/Results_Mobiliti/2023-04-27-SACOG-Baseline060/2023-04-27-sacog-baseline_060_legs/legs.tsv"
+  gdf_legs_path: ""
+
+  processed_path : "../../data/sacog"
+  log_path: "../../data/sacog"
+
+system_metrics:
+  mobiliti_path : "/Users/akuncheria/Documents/GSR-2021Feb/UCBerkeley_GSR/Results_Mobiliti/2023-04-27-SACOG-Baseline060/2023-04-27-sacog-baseline_060_links"
+  fpath : "avg_flow_rates.tsv"
+  spath : "avg_speeds.tsv"
+  fupath : "fuel_consumption.tsv"
+
+truck:
+  truck_demand: "no"
+  truckcountpath_1: ""
+  truckcountpath_2: ""
+  truckcountpath_3: ""
+
+legs_dest: ""
+
+text:
+  citystat_path : "../../data/sacog/sacogcities_statistics/sacog_cities_population.csv"
+
+

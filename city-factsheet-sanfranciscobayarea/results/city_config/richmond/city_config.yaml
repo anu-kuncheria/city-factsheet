@@ -1,0 +1,4 @@
+etl:
+  city_name: richmond
+  city_name_report: Richmond
+  regionboundryfile_cityname: richmond

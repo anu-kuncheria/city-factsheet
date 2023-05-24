@@ -1,0 +1,4 @@
+etl:
+  city_name: gilroy
+  city_name_report: Gilroy
+  regionboundryfile_cityname: gilroy

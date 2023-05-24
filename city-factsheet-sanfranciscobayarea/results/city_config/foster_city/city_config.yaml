@@ -1,0 +1,4 @@
+etl:
+  city_name: foster_city
+  city_name_report: Foster City
+  regionboundryfile_cityname: foster_city

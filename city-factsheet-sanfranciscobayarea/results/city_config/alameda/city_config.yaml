@@ -1,0 +1,4 @@
+etl:
+  city_name: alameda
+  city_name_report: Alameda
+  regionboundryfile_cityname: alameda

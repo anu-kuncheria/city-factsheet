@@ -1,0 +1,4 @@
+etl:
+  city_name: oakland
+  city_name_report: Oakland
+  regionboundryfile_cityname: oakland

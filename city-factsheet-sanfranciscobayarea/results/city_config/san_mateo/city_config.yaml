@@ -1,0 +1,4 @@
+etl:
+  city_name: san_mateo
+  city_name_report: San Mateo
+  regionboundryfile_cityname: san_mateo

@@ -1,0 +1,4 @@
+etl:
+  city_name: novato
+  city_name_report: Novato
+  regionboundryfile_cityname: novato

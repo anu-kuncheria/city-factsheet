@@ -1,0 +1,4 @@
+etl:
+  city_name: petaluma
+  city_name_report: Petaluma
+  regionboundryfile_cityname: petaluma

@@ -1,0 +1,4 @@
+etl:
+  city_name: vacaville
+  city_name_report: Vacaville
+  regionboundryfile_cityname: vacaville

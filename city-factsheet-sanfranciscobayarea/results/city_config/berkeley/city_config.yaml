@@ -1,0 +1,4 @@
+etl:
+  city_name: berkeley
+  city_name_report: Berkeley
+  regionboundryfile_cityname: berkeley

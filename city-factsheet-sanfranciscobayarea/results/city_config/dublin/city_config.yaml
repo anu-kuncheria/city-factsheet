@@ -1,0 +1,4 @@
+etl:
+  city_name: dublin
+  city_name_report: Dublin
+  regionboundryfile_cityname: dublin

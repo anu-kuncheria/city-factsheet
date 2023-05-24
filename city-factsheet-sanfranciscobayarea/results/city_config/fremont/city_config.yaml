@@ -1,0 +1,4 @@
+etl:
+  city_name: fremont
+  city_name_report: Fremont
+  regionboundryfile_cityname: fremont

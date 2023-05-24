@@ -1,0 +1,4 @@
+etl:
+  city_name: sausalito
+  city_name_report: Sausalito
+  regionboundryfile_cityname: sausalito

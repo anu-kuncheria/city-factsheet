@@ -1,0 +1,4 @@
+etl:
+  city_name: san_pablo
+  city_name_report: San Pablo
+  regionboundryfile_cityname: san_pablo

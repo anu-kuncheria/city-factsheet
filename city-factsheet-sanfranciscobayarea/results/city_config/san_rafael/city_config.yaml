@@ -1,0 +1,4 @@
+etl:
+  city_name: san_rafael
+  city_name_report: San Rafael
+  regionboundryfile_cityname: san_rafael

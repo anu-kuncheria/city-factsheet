@@ -1,0 +1,4 @@
+etl:
+  city_name: cotati
+  city_name_report: Cotati
+  regionboundryfile_cityname: cotati

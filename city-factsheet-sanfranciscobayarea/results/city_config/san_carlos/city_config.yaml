@@ -1,0 +1,4 @@
+etl:
+  city_name: san_carlos
+  city_name_report: San Carlos
+  regionboundryfile_cityname: san_carlos

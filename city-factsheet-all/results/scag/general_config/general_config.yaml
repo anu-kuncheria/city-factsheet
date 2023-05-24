@@ -1,0 +1,34 @@
+
+etl:
+  region: 'scag'
+  taz_boundary_path : "/Users/akuncheria/Documents/GSR-2021Feb/UCBerkeley_GSR/Networks_Dataset/data/boundary/scag/SCAG_TAZ.geojson"
+  region_boundary_path : "../../data/scag/scagcities_boundary/City_Boundaries_%E2%80%93_SCAG_Region_processed.geojson"
+
+  network_path : "../../../../Networks_Dataset/networks_dataset_Mobiliti/Nov2019/for_drive/July2021"
+  city_links: "la_links.csv"
+  city_nodes: "la_nodes.csv"
+  gdf_links_path: "../../data/scag/scagnetwork_gdf/gdf_links.geojson"
+
+  raw_legs_path: "../../../../Results_Mobiliti/2023-04-28-SCAG-Baseline060/2023-04-28-scag-baseline_060_legs/legs.tsv"
+  gdf_legs_path: ""
+
+  processed_path : "../../data/scag"
+  log_path: "../../data/scag"
+
+system_metrics:
+  mobiliti_path : "../../../../Results_Mobiliti/2023-04-28-SCAG-Baseline060/2023-04-28-scag-baseline_060_links"
+  fpath : "avg_flow_rates.tsv"
+  spath : "avg_speeds.tsv"
+  fupath : "fuel_consumption.tsv"
+
+truck:
+  truck_demand: "yes"
+  truckcountpath_1: "purpose_counts.90.tsv"
+  truckcountpath_2: "purpose_counts.91.tsv"
+  truckcountpath_3: "purpose_counts.92.tsv"
+
+legs_dest:
+
+text:
+  citystat_path : "../../data/scag/scagcities_statistics/scag_cities_population.csv"
+

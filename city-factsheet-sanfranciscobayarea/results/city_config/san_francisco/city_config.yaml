@@ -1,0 +1,4 @@
+etl:
+  city_name: san_francisco
+  city_name_report: San Francisco
+  regionboundryfile_cityname: san_francisco

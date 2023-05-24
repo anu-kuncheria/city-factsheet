@@ -1,0 +1,4 @@
+etl:
+  city_name: union_city
+  city_name_report: Union City
+  regionboundryfile_cityname: union_city

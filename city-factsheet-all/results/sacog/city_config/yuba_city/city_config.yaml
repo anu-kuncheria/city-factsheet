@@ -1,0 +1,5 @@
+
+etl:
+  city_name : "yuba_city"
+  city_name_report : "Yuba City"
+  regionboundryfile_cityname : "yuba_city" #city name in the boundary file

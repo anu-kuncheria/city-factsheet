@@ -1,0 +1,5 @@
+
+etl:
+  city_name : "corona"
+  city_name_report : "Corona"
+  regionboundryfile_cityname : "Corona" #city name in the boundary file

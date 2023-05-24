@@ -1,0 +1,4 @@
+etl:
+  city_name: palo_alto
+  city_name_report: Palo Alto
+  regionboundryfile_cityname: palo_alto

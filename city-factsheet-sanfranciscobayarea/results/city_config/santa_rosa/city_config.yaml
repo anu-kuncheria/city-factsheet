@@ -1,0 +1,4 @@
+etl:
+  city_name: santa_rosa
+  city_name_report: Santa Rosa
+  regionboundryfile_cityname: santa_rosa

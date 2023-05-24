@@ -1,0 +1,4 @@
+etl:
+  city_name: emeryville
+  city_name_report: Emeryville
+  regionboundryfile_cityname: emeryville

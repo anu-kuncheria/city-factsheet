@@ -1,0 +1,5 @@
+
+etl:
+  city_name : "long_beach"
+  city_name_report : "Long Beach"
+  regionboundryfile_cityname : "Long Beach" #city name in the boundary file

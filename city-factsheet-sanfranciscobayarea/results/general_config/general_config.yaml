@@ -1,0 +1,40 @@
+etl:
+  region: "sanfrancisco_bay_area"
+  taz_boundary_path : ""
+  cities_boundary_path : "../data/sfbayareacities_boundary/San_Francisco_Bay_Region_Incorporated_Cities_and_Towns_processed.geojson"
+
+  network_path :  "../../../Networks_Dataset/networks_dataset_Mobiliti/Nov2019/for_drive/July2021"
+  city_links: "sf_links.csv"
+  city_nodes: "sf_nodes.csv"
+  gdf_links_path: "../data/sfbayareanetwork_gdf/gdf_links.geojson"
+
+  raw_legs_path: "../../../Results_Mobiliti/2022-05-11 - RSR Bridge Closure (more scenarios)/2022-05-11-sf_rsr_baseline_060_noscen_legs/legs.tsv"
+  gdf_legs_path: ""
+
+  coc_shapefile : "../data/sfbayarea_auxillaryfiles/comminity_of_concern/MTC_Communities_of_Concern__2018__with_American_Community_Survey_Data__2012-2016_-shp/communities_of_concern_2018_w_acs2016.shp"
+  coc_links: "../data/sfbayarea_auxillaryfiles/comminity_of_concern/bayarea_coc.csv"
+  legsstartvmt_path: "../data/sfbayarea_auxillaryfiles/legs_related/b60_residentiallegs_startvmt.shp"
+  bayareareclassify: "../data/sfbayarea_auxillaryfiles/network_classification/bayarea_links_reclassification.shp"
+  rawregulator_path : "../data/sfbayarea_auxillaryfiles/RegulatorPredictionsAllBay_0522_2.csv"
+  regulator_path :  "../data/sfbayarea_auxillaryfiles/regulator/regulator.geojson"
+
+  processed_path : "../data"
+  log_path: "../data"
+
+system_metrics:
+  mobiliti_path : "../../../Results_Mobiliti/2022-05-11 - RSR Bridge Closure (more scenarios)/2022-05-11-sf_rsr_baseline_060_noscen_links"
+  fpath : "avg_flow_rates.tsv"
+  spath : "avg_speeds.tsv"
+  fupath : "fuel_consumption.tsv"
+
+truck:
+  truck_demand: "yes"
+  truckcountpath_1: "purpose_counts.11.tsv" 
+  truckcountpath_2: ""
+  truckcountpath_3: ""
+
+legs_dest: ""
+
+text:
+  citystat_path : "../data/sfbayareacities_statistics/sfbayarea_cities_population.csv"
+

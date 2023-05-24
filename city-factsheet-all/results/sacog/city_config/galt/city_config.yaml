@@ -1,0 +1,5 @@
+
+etl:
+  city_name : "galt"
+  city_name_report : "Galt"
+  regionboundryfile_cityname : "galt" #city name in the boundary file

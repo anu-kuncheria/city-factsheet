@@ -1,0 +1,4 @@
+etl:
+  city_name: livermore
+  city_name_report: Livermore
+  regionboundryfile_cityname: livermore
