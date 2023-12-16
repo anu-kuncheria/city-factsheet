@@ -5,11 +5,12 @@ Generates:
 3. Clipped city reclassified links geojson file
 4. Clipped city regulator geojson file
 """
-
 import sys
 sys.path.append("general_config")
 from load_data import *
 import utility as util
+
+
 
 logger.info(f"Load config from {config_file}")
 logger.info(f" city_name specified in config is {city_name}")
@@ -78,11 +79,11 @@ def network_clipping(boundary_path):
     logger.info(
         "-------------------Start data transformation-------------------")
     logger.info(f"==== Loading the city boundry and GDF links file ====")
-    city_boundry = gpd.read_file(boundary_path)
-    assert city_boundry.crs == 'EPSG:4326', "CRS not epsg 4326. Check the CRS of the boundry shapefile"
+    city_boundary = gpd.read_file(boundary_path)
+    assert city_boundary.crs == 'EPSG:4326', "CRS not epsg 4326. Check the CRS of the boundry shapefile"
     gdf_links = gpd.read_file(gdflinks_path)
     logger.info("Clipping the network to city boundry.")
-    city_links = gpd.clip(gdf_links, city_boundry)
+    city_links = gpd.clip(gdf_links, city_boundary)
     city_links = city_links[city_links['geometry'].apply(
         lambda x: x.type == 'LineString')]
     print(len(city_links))
@@ -196,7 +197,7 @@ if __name__ == "__main__":
     if not os.path.exists(gdflinks_path):
         gdf_wholenetwork()
 
-    if not os.path.exists(os.path.join(write_directory, f"citylinks_{city_name}.geojson")):
+    if not os.path.exists(os.path.join(write_directory, f"boundary_{city_name}.geojson")):
         logger.info(
             " Report is for city, extracting city boundary from the region boundary")
         filter_cityboundary_from_regionboundary(

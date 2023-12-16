@@ -15,7 +15,7 @@ for cityname in $subdirectories; do
     python3 ../scripts/links_reclassification.py "$(pwd)/city_config/$cityname"
     python3 ../scripts/triplegs_metrics.py "$(pwd)/city_config/$cityname"
     python3 ../scripts/report.py "$(pwd)/city_config/$cityname"
-    echo "Completed .."
+    echo ".. Completed .."
 done
 
 

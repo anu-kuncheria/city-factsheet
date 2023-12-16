@@ -69,11 +69,11 @@ def network_clipping(boundary_path):
     """
     logger.info("-------------------Start data transformation-------------------")
     logger.info(f"==== Loading the city boundry and GDF links file ====")
-    city_boundry = gpd.read_file(boundary_path)
-    assert city_boundry.crs == 'EPSG:4326', "CRS not epsg 4326. Check the CRS of the boundry shapefile"
+    city_boundary = gpd.read_file(boundary_path)
+    assert city_boundary.crs == 'EPSG:4326', "CRS not epsg 4326. Check the CRS of the boundry shapefile"
     gdf_links = gpd.read_file(gdflinks_path)
     logger.info("Clipping the network to city boundry.")
-    city_links = gpd.clip(gdf_links,city_boundry)
+    city_links = gpd.clip(gdf_links,city_boundary)
     city_links = city_links[city_links['geometry'].apply(lambda x : x.type == 'LineString' )]
     print(len(city_links))
     print(city_links.crs)

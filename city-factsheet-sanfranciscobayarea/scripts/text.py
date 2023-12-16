@@ -19,10 +19,11 @@ totaltrips_starting = "{:,}".format(totaltrips_starting)
 cityStat = """
 <html>
 <body>
+<h1> %s </h1>
 <h2> City Statistics </h2>
 <p> %s city in California is %s sq. miles and has a population of %s.  </p>
 </body>
-</html>""" % (city_name_report, area, population)
+</html>""" % (city_name_report, city_name_report, area, population)
 
 networkStat = """
 <html>
@@ -93,8 +94,8 @@ the traffic dynamics. The routing algorithm for generating the dynamics is a sho
 <ul>
   <li> Chan, C., Kuncheria, A., & Macfarlane, J. (2023). Simulating the Impact of Dynamic Rerouting on Metropolitan-scale Traffic Systems. ACM Transactions on Modeling and Computer Simulation, 33(1–2), 7:1-7:29. https://doi.org/10.1145/3579842 </li>
   <li> Chan,C., Wang,B., Bachan,J., & Macfarlane,J. (2018). Mobiliti: Scalable Transportation Simulation Using High-Performance Parallel Computing, 21st International Conference on Intelligent Transportation Systems (ITSC), Nov. 2018, pp. 634–641, iSSN: 2153-0017 </li>
-  <li> Chan,C., Kuncheria,A., Zhao,B., Cabannes,T., Keimer,A., Wang,B., Bayen,A., & Macfarlane,J. Quasi-Dynamic Traffic Assignment using High Performance Computing, arXiv:2104.12911 [cs], Apr. 2021 </li>
   <li> Kuncheria, A., Walker, J.L. and Macfarlane, J. (2023). Socially-aware evaluation framework for transportation, Transportation Letters, pp. 1–18. Available at: https://doi.org/10.1080/19427867.2022.2157366. </li>
+  <li> Chan,C., Kuncheria,A., Zhao,B., Cabannes,T., Keimer,A., Wang,B., Bayen,A., & Macfarlane,J. Quasi-Dynamic Traffic Assignment using High Performance Computing, arXiv:2104.12911 [cs], Apr. 2021 </li>
 </ul>
 
 </body>

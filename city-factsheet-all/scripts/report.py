@@ -11,7 +11,7 @@ from high_adt import highestADT
 from commute_trips import mean_commute_tt
 import text 
 import key
-dp.login(token = key.datapane_key)
+# dp.login(token = key.datapane_key)
 
 write_directory = os.path.join(processed_path,city_name, 'figures')
 
@@ -69,10 +69,12 @@ def report():
         #dp.Group(dp.Media(file = truck_vmtbar),dp.Table(truckadttable), columns = 2),
         dp.HTML(text.aboutMobiliti)
         )
+    dp.save_report(report_content, path = f'Smart Cities Research Center: {city_name_report}.html')
+
     
-    dp.upload_report(report_content, name = f'Smart Cities Research Center: {city_name_report}', 
-                     publicly_visible=True) #formatting = dp.Formatting(width = dp.Formatting.width.FULL, bg_color = "#FFF", accent_color = "#4E46E5", text_alignment = dp.Formatting.text_alignment.JUSTIFY,  
-                                                                       #font = dp.Formatting.font.DEFAULT, light_prose = False))
+    # dp.upload_report(report_content, name = f'Smart Cities Research Center: {city_name_report}', 
+    #                  publicly_visible=True) #formatting = dp.Formatting(width = dp.Formatting.width.FULL, bg_color = "#FFF", accent_color = "#4E46E5", text_alignment = dp.Formatting.text_alignment.JUSTIFY,  
+    #                                                                    #font = dp.Formatting.font.DEFAULT, light_prose = False))
 
 if __name__ == "__main__":
     report()

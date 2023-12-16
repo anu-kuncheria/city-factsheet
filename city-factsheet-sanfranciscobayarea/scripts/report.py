@@ -15,7 +15,7 @@ from system_metrics import networktable
 import datapane as dp
 print("datapane version", dp.__version__)
 
-dp.login(token=key.datapane_key)
+# dp.login(token=key.datapane_key)
 write_directory = os.path.join(processed_path, city_name, 'figures')
 
 
@@ -57,6 +57,7 @@ def report():
     else:
         coc_block = [dp.Media(file=coc_ct_city), dp.Table(cocdf)]
         coc_val = text.coc
+        print(f"======================== YES COC. REDO REPORT for {city_name}")
 
     # blocks
     legs_block = [dp.Media(file=trippurposepath), dp.Plot(workHeatmap)]
@@ -90,9 +91,7 @@ def report():
         dp.Group(blocks=coc_block, columns=2),
         dp.HTML(text.aboutMobiliti)
     )
-
-    dp.upload_report(report_content, name=f'Smart Cities Research Center: {city_name_report}',
-                     publicly_visible=True)
+    dp.save_report(report_content, path=f'html_reports/{city_name}_city_factsheet.html')
 
 
 if __name__ == "__main__":

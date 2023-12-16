@@ -1,11 +1,14 @@
 import sys
 sys.path.append("general_config")
 from load_data import *
-
-from system_metrics import networktable
-from trafficmetrics_table import systemtraffic_table
-import matplotlib.patches as mpatches
 import utility as util
+import matplotlib.patches as mpatches
+from trafficmetrics_table import systemtraffic_table
+from system_metrics import networktable
+import numpy as np
+Import math
+
+
 
 logger.info(f" Started script {os.path.basename(__file__)}")
 write_directory = os.path.join(processed_path, city_name, 'figures')
@@ -43,7 +46,7 @@ def coc_map():
         ax.legend(handles=[high_patch, higher_patch, highest_patch])
         fig1.savefig(os.path.join(write_directory,
                      f"coc_{city_name}.png"), bbox_inches='tight')
-        ld.logger.info("Completed writing the image to png")
+        logger.info("Completed writing the image to png")
 
 
 def coc_bg():
@@ -106,8 +109,10 @@ def coc_traffic_metrics():
         # Coc Dataframe
         mToMile = 0.000621371
         coc_df = pd.DataFrame(columns=['Metric', '% Share'])
-        temp2 = {'Network Miles': int(flowcoc['LENGTH(meters)'].sum() * mToMile * 100 / networkLen),
-                 'VMT': int(cocVmt / cityVmt * 100), 'VHD': int(cocVhd / cityVhd * 100), 'Fuel': int(cocFuel / cityFuel * 100)}
+        temp2 = {'Network Miles': int(np.round(flowcoc['LENGTH(meters)'].sum() * mToMile * 100 / networkLen)),
+                 'VMT': int(np.round(cocVmt / cityVmt * 100)), 
+		'VHD': int(np.round(cocVhd / cityVhd * 100)),
+                 'Fuel': int(np.round(cocFuel / cityFuel * 100))}
         for k, v in temp2.items():
             coc_df.loc[coc_df.shape[0]] = [k, v]
 

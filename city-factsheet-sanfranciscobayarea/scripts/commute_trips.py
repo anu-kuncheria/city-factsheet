@@ -25,7 +25,7 @@ def legs_start_work():
     legs_work_start = legs_start.query('purpose == 1')
 
     logger.info("==== Converting congested tt to minutes ===")
-    legs_work_start = preprocess_legs(legs_work_start)
+    legs_work_start = util.preprocess_legs(legs_work_start)
 
     legs_start.to_csv(os.path.join(
         write_directory, f"legs_start_{city_name}.csv"), index=False)

@@ -1,7 +1,8 @@
 import sys
 sys.path.append("general_config")
-from load_data import *
 import utility as util
+from load_data import *
+
 
 logger.info(f" Started script {os.path.basename(__file__)}")
 
@@ -19,10 +20,14 @@ def plot_marker(system_reclassify_four, boundary_path, markericon='circle'):
     folium.GeoJson(data=city_boundary["geometry"]).add_to(map)
     locationarr = system_reclassify_four[[
         'nref_lat', 'nref_long']].values.tolist()
+
+
     for point in range(0, len(locationarr)):
         folium.Marker(locationarr[point],
-                      popup=system_reclassify_four['ST_NAME'][point] + ' ' + system_reclassify_four['new_classi'][point] + ' ADT:' + str(
-                          system_reclassify_four['adt'][point]),
+                      popup=str(system_reclassify_four['ST_NAME'][point]) + ' ' +
+                      str(system_reclassify_four['new_classi']
+                          [point]) + ' ADT:'
+                      + str(system_reclassify_four['adt'][point]),
                       icon=folium.Icon(color="red", icon=markericon, prefix='fa')).add_to(map)
     return map
 
