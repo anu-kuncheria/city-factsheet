@@ -21,7 +21,6 @@ def plot_marker(system_reclassify_four, boundary_path, markericon='circle'):
     locationarr = system_reclassify_four[[
         'nref_lat', 'nref_long']].values.tolist()
 
-
     for point in range(0, len(locationarr)):
         folium.Marker(locationarr[point],
                       popup=str(system_reclassify_four['ST_NAME'][point]) + ' ' +

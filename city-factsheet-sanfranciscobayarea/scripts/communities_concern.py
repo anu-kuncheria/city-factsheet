@@ -6,7 +6,7 @@ import matplotlib.patches as mpatches
 from trafficmetrics_table import systemtraffic_table
 from system_metrics import networktable
 import numpy as np
-Import math
+import math
 
 
 

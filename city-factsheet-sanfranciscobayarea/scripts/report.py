@@ -49,15 +49,16 @@ def report():
     worktrip_tt = mean_commute_tt(trips_start_work_city_path)
 
     # coc criteria to plot
+    print("Checking CoC criteria to plot...")
     cocbg = coc_bg()  # number of coc block Groups
     coc_network = coc_networkmiles()  # percentage
     if cocbg == 0 or coc_network <= 2:
+        print("== No COC ===")
         coc_block = []
         coc_val = "."  # Text data is set to None
     else:
         coc_block = [dp.Media(file=coc_ct_city), dp.Table(cocdf)]
         coc_val = text.coc
-        print(f"======================== YES COC. REDO REPORT for {city_name}")
 
     # blocks
     legs_block = [dp.Media(file=trippurposepath), dp.Plot(workHeatmap)]
@@ -91,7 +92,8 @@ def report():
         dp.Group(blocks=coc_block, columns=2),
         dp.HTML(text.aboutMobiliti)
     )
-    dp.save_report(report_content, path=f'html_reports/{city_name}_city_factsheet.html')
+    dp.save_report(
+        report_content, path=f'html_reports/{city_name}_city_factsheet.html')
 
 
 if __name__ == "__main__":

@@ -14,7 +14,12 @@ for cityname in $subdirectories; do
     python3 ../scripts/truck.py "$(pwd)/city_config/$cityname" 
     python3 ../scripts/links_reclassification.py "$(pwd)/city_config/$cityname"
     python3 ../scripts/triplegs_metrics.py "$(pwd)/city_config/$cityname"
-    python3 ../scripts/report.py "$(pwd)/city_config/$cityname"
+    if python3 ../scripts/report.py "$(pwd)/city_config/$cityname"; then
+        echo "report.py executed successfully."
+    else
+        echo "report.py failed. Running Report version2 for non Coc cities"
+        python3 ../scripts/report_nococ_cities.py "$(pwd)/city_config/$cityname"
+    fi    
     echo ".. Completed .."
 done
 
