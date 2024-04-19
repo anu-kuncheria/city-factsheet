@@ -6,7 +6,8 @@ from commute_trips import trips_start
 from communities_concern import coc_bg
 
 citystat_df = pd.read_csv(citystat_path)
-pop = int(citystat_df[citystat_df['city'] == city_name]['population'].values[0])
+pop = int(citystat_df[citystat_df['city'] == city_name]
+          ['population'].values[0])
 population = "{:,}".format(int(pop))
 area = citystat_df[citystat_df['city'] == city_name]['Area_sqmiles'].values[0]
 area = "{:,}".format(int(area))
@@ -36,7 +37,7 @@ systemStat = """
 <html>
 <body>
 <h2> Traffic Metrics </h2>
-<p>  Distribution of Average daily traffic (fig 1), Vehicle hours of delay (fig 2), and Fuel consumption (fig 3) across links are shown below.
+<p>  Average daily traffic (ADT) (fig 1), Delay (fig 2), and Fuel consumption (fig 3) across links are shown below.
 </p>
 </body>
 
@@ -46,7 +47,7 @@ adtStat = """
 <html>
 <body>
 <h2> Streets with the highest flow </h2>
-<p> The map shows the highest Average Daily Traffic (ADT) by road class.
+<p> The map displays streets with the highest Average Daily Traffic (ADT) categorized by road class.
 </p>
 </body>
 </html>"""
@@ -65,8 +66,8 @@ trips = """
 <body>
 <h2> Trip Legs Profile </h2>
 <p>  The number of trips originating from the city is %s and the number of trips ending in the city is %s. 
-The bar graph illustrates the distribution of trips by purpose that end in the city. 
-The figure on the right presents a heat map showcasing the destinations of work trips.
+The bar graph illustrates the distribution of trips by purpose that end within the city. 
+The figure on the right presents a heatmap showcasing the destinations of work trips.
 </p>
 </body>
 </html>""" % (totaltrips_starting, totaltrips_ending)
